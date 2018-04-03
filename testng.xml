@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RetryFailedTestSuite">
+
+   <listeners>
+	  <listener class-name="Analyzer.MyTransformer"></listener>
+	  <listener class-name="ExtentReportListener.ExtentReportNG"></listener>
+   </listeners>
+	
+  <test name="RetryFailedTestCases">
+    <classes>
+      <class name="Tests.MyTests"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
